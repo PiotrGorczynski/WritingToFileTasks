@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
-public class printingFilesWithExtension
+public class PrintingFilesWithExtension
 {
 
     public static void main(String[] args)
