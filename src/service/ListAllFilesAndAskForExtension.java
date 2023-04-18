@@ -8,10 +8,7 @@ import static utils.GetFileExtension.getFileExtension;
 
 public class ListAllFilesAndAskForExtension
 {
-    public static void main(String[] args)
-    {
 
-    }
     public static void listAllFilesAndAskForExtension()
     {
         Scanner scanner = new Scanner(System.in);

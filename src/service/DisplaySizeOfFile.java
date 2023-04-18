@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 
 public class DisplaySizeOfFile
 {
-
     public static void displaySizeOfFile(String fileName)
     {
         Path path = Paths.get(fileName);
