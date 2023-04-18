@@ -1,12 +1,17 @@
 package service;
 
 import java.io.File;
+import java.nio.file.Files;
 import java.util.Scanner;
 
 import static utils.GetFileExtension.getFileExtension;
 
 public class ListAllFilesAndAskForExtension
 {
+    public static void main(String[] args)
+    {
+
+    }
     public static void listAllFilesAndAskForExtension()
     {
         Scanner scanner = new Scanner(System.in);

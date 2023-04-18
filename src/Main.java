@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Set;
 
+import static service.DisplaySizeOfFile.displaySizeOfFile;
 import static service.ListAllFilesAndAskForExtension.listAllFilesAndAskForExtension;
 
 public class Main
@@ -20,6 +21,7 @@ public class Main
         Path path = Paths.get("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service");
         List<Path> paths = ListAllFiles.listFiles(path);
         paths.forEach(x-> System.out.println(x));
+        displaySizeOfFile("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/utils");
     }
 
 }
