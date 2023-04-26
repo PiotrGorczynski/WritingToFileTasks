@@ -1,31 +1,25 @@
-import service.ListAllFiles;
-import utils.ListFileWithinDirectory;
+import service.DisplaySizeOfFile;
+import service.LastModifiedDate;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.Set;
-
-import static service.DisplayAllPathsByGivenPath.listFilesForFolder;
-import static service.DisplaySizeOfFile.displaySizeOfFile;
-import static service.ListAllFilesAndAskForExtension.listAllFilesAndAskForExtension;
 
 public class Main
 {
     public static void main(String[] args) throws IOException
     {
 
-        listAllFilesAndAskForExtension();
-        Set<String> set = ListFileWithinDirectory.listFilesUsingJavaIO("src");
-        System.out.println(set);
-        Path path = Paths.get("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service");
-        List<Path> paths = ListAllFiles.listFiles(path);
-        paths.forEach(x-> System.out.println(x));
-        displaySizeOfFile("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/utils");
-        final File folder =  new File("C:\\Users\\Piotr\\IdeaProjects\\WritingToFileTasks\\src\\service");
-        listFilesForFolder(folder);
+//        listAllFilesAndAskForExtension();
+//        Set<String> set = ListFileWithinDirectory.listFilesUsingJavaIO("src");
+//        System.out.println(set);
+//        Path path = Paths.get("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service");
+//        List<Path> paths = ListAllFiles.listFiles(path);
+//        paths.forEach(x-> System.out.println(x));
+//        displaySizeOfFile("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/utils");
+//        final File folder =  new File("C:\\Users\\Piotr\\IdeaProjects\\WritingToFileTasks\\src\\service");
+//        listFilesForFolder(folder);
+        DisplaySizeOfFile.displaySizeOfFile("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service/DisplayAllPathsByGivenPath.java");
+        LastModifiedDate.getLastModifiedFilePath("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service");
+        LastModifiedDate.getTheOldestModifiedFile("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service");
     }
 
 }
