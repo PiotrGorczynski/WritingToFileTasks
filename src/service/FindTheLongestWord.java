@@ -1,8 +1,8 @@
 package service;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class FindTheLongestWord
@@ -40,3 +40,4 @@ public class FindTheLongestWord
         System.out.println(list);
     }
 }
+

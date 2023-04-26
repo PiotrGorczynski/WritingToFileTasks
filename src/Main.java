@@ -1,4 +1,5 @@
 import service.DisplaySizeOfFile;
+import service.FileToUppercaseLetters;
 import service.FindTheLongestWord;
 import service.LastModifiedDate;
 
@@ -23,7 +24,7 @@ public class Main
         LastModifiedDate.getTheOldestModifiedFile("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service");
         FindTheLongestWord.findTheLongestWord("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service/CountHowManyWordsIsInAFile.java");
         FindTheLongestWord.findTheWordWithThreeChars("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service/CountHowManyWordsIsInAFile.java");
-
+        FileToUppercaseLetters.toUpperCaseLetter("C:/Users/Piotr/IdeaProjects/WritingToFileTasks/src/service/CountHowManyWordsIsInAFile.java", "newFile");
     }
 
 }
